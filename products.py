@@ -18,9 +18,17 @@ while True :
 						# p = [name, price]
 						# products.append(p)	
 print(products)
-print(products[0])
-print(products[0][1])
+# print(products[0])
+# print(products[0][1])
 
 for p in products :
 	print(p) #印出products裡的小清單
 	print(p[0], '的價格為', p[1]) #用小清單的位置列出商品和價格
+
+
+# class 63
+# 商品寫入 #w
+
+with open ('products.csv', 'w') as f :
+	for p in products :
+		f.write(p[0] + ',' + p[1] + '\n') 
