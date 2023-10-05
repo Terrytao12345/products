@@ -29,6 +29,6 @@ for p in products :
 # class 63
 # 商品寫入 #w
 
-with open ('products.csv', 'w') as f :
+with open ('products.csv', 'w') as f : #txt/csv
 	for p in products :
-		f.write(p[0] + ',' + p[1] + '\n') 
+		f.write(p[0] + ',' + p[1] + '\n') # ',' 是為了檔案可視性分隔和excel 打開方便
